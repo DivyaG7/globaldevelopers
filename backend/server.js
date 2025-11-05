@@ -1,55 +1,43 @@
 const express = require("express");
-const nodemailer = require("nodemailer");
 const bodyParser = require("body-parser");
 const cors = require("cors");
+const { Resend } = require("resend");
 
 const app = express();
+const resend = new Resend(process.env.RESEND_API_KEY);
 
-// ✅ Allow only your Vercel frontend to access backend
 app.use(
   cors({
-    origin: "https://globaldevelopers.vercel.app",
-    methods: ["GET", "POST"],
+    origin: "https://globaldevelopers.vercel.app", // your frontend domain
+    methods: ["POST"],
     allowedHeaders: ["Content-Type"],
   })
 );
-
 app.use(bodyParser.json());
 
+// ✅ POST route to send email
 app.post("/send-mail", async (req, res) => {
   const { firstName, lastName, email, message } = req.body;
-  console.log("Incoming data:", req.body);
-
-  const transporter = nodemailer.createTransport({
-    host: "smtp.gmail.com",
-    port: 465,
-    secure: true,
-    auth: {
-      user: process.env.EMAIL_USER || "divyaneela75@gmail.com",
-      pass: process.env.EMAIL_PASS || "ttwpjwqkhahlrgyh",
-    },
-  });
-
-  const mailOptions = {
-    from: "divyaneela75@gmail.com",
-    to: "divyaneela75@gmail.com",
-    subject: `New Contact Form Submission from ${firstName} ${lastName}`,
-    html: `
-      <h3>Contact Form Submission</h3>
-      <p><strong>Name:</strong> ${firstName} ${lastName}</p>
-      <p><strong>Email:</strong> ${email}</p>
-      <p><strong>Message:</strong> ${message}</p>
-    `,
-  };
+  console.log("📨 Received data:", req.body);
 
   try {
-    console.log("Attempting to send email...");
-    await transporter.sendMail(mailOptions);
-    console.log("✅ Email sent successfully!");
-    res.status(200).send("Email sent successfully!");
+    const response = await resend.emails.send({
+      from: "Global Developers <onboarding@resend.dev>", // Default verified sender
+      to: "divyaneela75@gmail.com", // Your receiving email
+      subject: `New Contact Form Submission from ${firstName} ${lastName}`,
+      html: `
+        <h3>Contact Form Submission</h3>
+        <p><strong>Name:</strong> ${firstName} ${lastName}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Message:</strong> ${message}</p>
+      `,
+    });
+
+    console.log("✅ Email sent successfully:", response);
+    res.status(200).json({ success: true, message: "Email sent successfully!" });
   } catch (error) {
     console.error("❌ Error sending email:", error);
-    res.status(500).send("Error sending email");
+    res.status(500).json({ success: false, error: error.message });
   }
 });
 
