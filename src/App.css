@@ -244,6 +244,7 @@
 }
 
 
+
 .clients p {
   color: #A90000;
 }
@@ -317,8 +318,9 @@
   text-align: center;
 }
 
-.meet {
-  button {
+
+
+.meet button {
     border-radius: 25px;
     border: 1px solid #fff;
     background: transparent;
@@ -327,12 +329,10 @@
     font-weight: 700;
   }
 
-  button:hover {
+.meet button:hover {
     background: #E31808;
     border: none;
   }
-
-}
 
 .applynow button {
   border-radius: 25px;
