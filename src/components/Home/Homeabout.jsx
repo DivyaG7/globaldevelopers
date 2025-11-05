@@ -7,10 +7,10 @@ const Homeabout = () => {
         <>
             <section className='home-about p-5'>
                 <div className="row">
-                    <div className="col-md-6 d-flex justify-content-center align-items-center">
+                    <div className="col-md-6 d-flex justify-content-center align-items-center mb-2">
                         <img src={homeabout} alt='home-about-image' className='img-fluid w-75' />
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-md-6 mb-2">
                         <h2 className='fw-bold'>About us</h2>
                         <h6>THE GLOBAL CONSULTANCY PROVIDING SMART WORKS</h6>
                         <p>Global Sanitary Consultancy was established on January 14, 2010, initially focusing on small-scale contracts such as housekeeping, house cleaning, sewage management, and septic tank clearance.</p>

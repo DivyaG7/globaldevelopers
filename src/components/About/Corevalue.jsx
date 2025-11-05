@@ -5,10 +5,10 @@ const Corevalue = () => {
         <>
             <section className='corevalue p-5'>
                 <div className='p-3'>
-                <h2 className='fw-bold'>OUR CORE VALUES</h2>
-                <p>Our people and our actions are driven by one overarching purpose: Building a better future, together. As
-                    builders,we aren’t just creating new structures - we’re building people, communities and legacies.</p>
-                  </div>
+                    <h2 className='fw-bold'>OUR CORE VALUES</h2>
+                    <p>Our people and our actions are driven by one overarching purpose: Building a better future, together. As
+                        builders,we aren’t just creating new structures - we’re building people, communities and legacies.</p>
+                </div>
 
                 <div className="d-flex flex-wrap justify-content-center gap-5 mt-2">
                     <div className="">

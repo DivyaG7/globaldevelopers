@@ -59,26 +59,26 @@ const Ourwork = () => {
                     </div>
                 </div>
 
-                <div className='clients container py-5'>
+                <div className='clients container py-5 mt-3'>
                     <h2 className='fw-bold'>Our Clients</h2>
                     <p>THE GLOBAL CONSULTANCY PROVIDING SMART WORKS</p>
                     <div className="row mt-4">
-                        <div className="col-md-3">
+                        <div className="col-lg-3 col-md-6 mb-3">
                             <div className='client-box p-4'>
                                 <img src={client1} alt='client-logo' className='img-fluid' />
                             </div>
                         </div>
-                        <div className="col-md-3">
+                        <div className="col-lg-3 col-md-6 mb-3">
                             <div className='client-box p-4'>
                                 <img src={client2} alt='client-logo' className='img-fluid' />
                             </div>
                         </div>
-                        <div className="col-md-3">
+                        <div className="col-lg-3 col-md-6 mb-3">
                             <div className='client-box p-4'>
                                 <img src={client3} alt='client-logo' className='img-fluid' />
                             </div>
                         </div>
-                        <div className="col-md-3">
+                        <div className="col-lg-3 col-md-6 mb-3">
                             <div className='client-box p-4'>
                                 <img src={client4} alt='client-logo' className='img-fluid' />
                             </div>

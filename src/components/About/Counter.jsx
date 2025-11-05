@@ -28,7 +28,7 @@ const Counter = () => {
             <img src={aboutImg} alt="about" className="img-fluid rounded shadow" />
           </div>
 
-          <div className="col-md-5 mt-md-0">
+          <div className="col-md-5 mt-md-0 mt-4">
             <div className="about-count-box p-5 rounded-4 shadow text-start">
               <div className="mb-4">
                 <h3 className="fw-bold display-5">

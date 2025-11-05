@@ -66,7 +66,7 @@ const TabsSection = () => {
           id="content1"
           role="tabpanel"
         >
-          <div className="content-wrapper d-flex align-items-stretch">
+          <div className="content-wrapper">
             <div className="col-lg-8 text-start">
               <h2>Global Sanitary Consultancy</h2>
               <h5>Sanitary & Civil Contractors</h5>
@@ -89,7 +89,7 @@ const TabsSection = () => {
         </div>
 
         <div className="tab-pane fade" id="content2" role="tabpanel">
-          <div className="content-wrapper d-flex align-items-stretch">
+          <div className="content-wrapper">
             <div className="col-lg-8 text-start">
               <h2>Global Associates</h2>
               <h5>Connectors & Consultant</h5>
@@ -112,7 +112,7 @@ const TabsSection = () => {
         </div>
 
         <div className="tab-pane fade" id="content3" role="tabpanel">
-          <div className="content-wrapper d-flex align-items-stretch">
+          <div className="content-wrapper">
             <div className="col-lg-8 text-start">
               <h2>Global Developers</h2>
               <h5>Promoters Contractors</h5>
@@ -136,7 +136,7 @@ const TabsSection = () => {
 
 
         <div className="tab-pane fade" id="content4" role="tabpanel">
-          <div className="content-wrapper d-flex align-items-stretch">
+          <div className="content-wrapper">
             <div className="col-lg-8 text-start">
               <h2>Global Estates</h2>
               <h5>Promoters Contractors</h5>
