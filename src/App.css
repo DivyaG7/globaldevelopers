@@ -170,8 +170,6 @@
   max-width: 100%;
   overflow-x: hidden;
   background: #EDF2FF;
-  position: relative;
-  z-index: 2;
 }
 
 .home-about h6 {
@@ -248,6 +246,11 @@
     opacity: 1;
   }
 
+}
+
+.clients {
+  position: relative;
+  z-index: 2;
 }
 
 .clients p {
