@@ -112,7 +112,7 @@
   border: none;
 }
 
-.content-wrapper > .col-lg-8 {
+.content-wrapper>.col-lg-8 {
   background: linear-gradient(to bottom, #c7cff9, #ffffff);
   border-radius: 20px;
   padding: 50px;
@@ -170,6 +170,8 @@
   max-width: 100%;
   overflow-x: hidden;
   background: #EDF2FF;
+  position: relative;
+  z-index: 2;
 }
 
 .home-about h6 {
@@ -191,6 +193,8 @@
 }
 
 .our-work {
+  position: relative;
+  z-index: 1;
   background-image: url('./assets/ourwork-bg.png');
   background-position: center;
   background-size: cover;
@@ -246,12 +250,11 @@
 
 }
 
-
-.clients p{
+.clients p {
   color: #A90000;
 }
 
-.clients .client-box{
+.clients .client-box {
   width: 200px;
   height: 200px;
   display: flex;
@@ -490,8 +493,8 @@
 }
 
 
-@media screen and (max-width: 1399px){
-  .tab-buttons{
+@media screen and (max-width: 1399px) {
+  .tab-buttons {
     border: none !important;
   }
 }
@@ -505,22 +508,22 @@
     width: 80%;
   }
 
-  .tab-buttons .nav-link{
+  .tab-buttons .nav-link {
     width: fit-content;
   }
 
-  .home-about{
+  .home-about {
     text-align: center;
   }
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 767px) {
   .arrow-icon {
     width: 25px;
     height: 25px;
   }
 
-  .clients{
+  .clients {
     display: flex;
     text-align: center;
     flex-direction: column;
@@ -528,14 +531,14 @@
     align-items: center !important;
   }
 
-  .clients .row{
+  .clients .row {
     display: flex;
     flex-direction: column;
     justify-content: center !important;
     align-items: center !important;
   }
 
-  .meet{
+  .meet {
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -543,12 +546,12 @@
     align-items: center !important;
   }
 
-  .meet > .d-flex{
+  .meet>.d-flex {
     flex-direction: column !important;
     width: fit-content;
   }
 
-  .corevalue > div{
+  .corevalue>div {
     text-align: center;
     padding: 5px !important;
   }
