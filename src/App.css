@@ -197,55 +197,50 @@
   color: #fff;
 }
 
-button {
-    padding: 8px 40px;
-    background: transparent;
-    color: #fff;
-    border-radius: 25px;
-    border: 1px solid #fff;
-    font-weight: 800;
-  }
+.our-work button {
+  padding: 8px 40px;
+  background: transparent;
+  color: #fff;
+  border-radius: 25px;
+  border: 1px solid #fff;
+  font-weight: 800;
+}
 
-  .works .work-box {
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-  }
+.works .work-box {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
 
-  .works .work-box img {
-    width: 100%;
-    transition: transform 0.4s ease;
-  }
+.works .work-box img {
+  width: 100%;
+  transition: transform 0.4s ease;
+}
 
-  /* Overlay setup */
-  .works .work-box .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.9);
-    /* black overlay */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: all 0.4s ease;
-    color: #fff;
-    border-radius: 8px;
-  }
+/* Overlay setup */
+.works .work-box .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  /* black overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.4s ease;
+  color: #fff;
+  border-radius: 8px;
+}
 
-  .works .work-box:hover img {
-    transform: scale(1.1);
-  }
+.works .work-box:hover img {
+  transform: scale(1.1);
+}
 
-  .works .work-box:hover .overlay {
-    opacity: 1;
-  }
-
-.our-work {
-  
-
+.works .work-box:hover .overlay {
+  opacity: 1;
 }
 
 
