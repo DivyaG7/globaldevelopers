@@ -248,10 +248,6 @@
 
 }
 
-.clients {
-  position: relative;
-  z-index: 2;
-}
 
 .clients p {
   color: #A90000;
