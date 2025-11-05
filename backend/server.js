@@ -8,7 +8,7 @@ const app = express();
 // ✅ Configure CORS properly for both local and live frontend
 app.use(
   cors({
-    origin: ["http://localhost:3000", "https://yourfrontenddomain.com"],
+    origin: ["http://localhost:3000", "https://globaldevelopers.vercel.app"],
     methods: ["POST"],
     credentials: true,
   })
