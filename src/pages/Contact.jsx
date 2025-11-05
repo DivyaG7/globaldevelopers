@@ -23,7 +23,7 @@ const Contact = () => {
         setLoading(true);
 
         try {
-            const res = await axios.post("http://localhost:5000/send-mail", formData);
+            const res = await axios.post("https://globaldevelopers.onrender.com/send-mail", formData);
             if (res.status === 200) {
                 toast.success("Message sent successfully!", { position: "top-center" });
                 setFormData({ firstName: "", lastName: "", email: "", message: "" });
