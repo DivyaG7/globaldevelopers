@@ -197,8 +197,7 @@
   color: #fff;
 }
 
-.our-work {
-  button {
+button {
     padding: 8px 40px;
     background: transparent;
     color: #fff;
@@ -243,6 +242,9 @@
   .works .work-box:hover .overlay {
     opacity: 1;
   }
+
+.our-work {
+  
 
 }
 
