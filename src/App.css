@@ -186,13 +186,11 @@
 }
 
 .home-about .arrow {
-  margin-left: -10px;
+  /* margin-left: -10px; */
   width: 60px;
 }
 
 .our-work {
-  position: relative;
-  z-index: 2;
   background-image: url('./assets/ourwork-bg.png');
   background-position: center;
   background-size: cover;
@@ -211,7 +209,6 @@
 
   .works .work-box {
     position: relative;
-    z-index: 1;
     overflow: hidden;
     border-radius: 10px;
   }
