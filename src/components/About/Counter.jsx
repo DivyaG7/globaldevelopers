@@ -60,7 +60,6 @@ const Counter = () => {
           doubling down on the leadership traits the helped us maintain this balance so far.</p>
         <div className="d-flex gap-4 justify-content-center mt-4">
           <button>MEET THE GLOBAL DEVELOPER LEADERS</button>
-          <button>READ OUR HISTORY</button>
         </div>
       </div>
 
@@ -70,8 +69,9 @@ const Counter = () => {
           If your heart’s in CONSTRUCTION DEISGN,
           and you think the journey is as important as the destination,
           join us for the ride.</p>
-
-        <button>MEET THE GLOBAL DEVELOPER LEADERS</button>
+        <a href="/contact">
+          <button>Apply Now</button>
+        </a>
       </div>
     </>
   );

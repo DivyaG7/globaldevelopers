@@ -26,7 +26,7 @@ const Navbar = () => {
         <div className="collapse navbar-collapse justify-content-center d-none d-lg-flex">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link active" href="/">
+              <a className="nav-link" href="/">
                 Home
               </a>
             </li>
@@ -63,7 +63,7 @@ const Navbar = () => {
           <div className="offcanvas-header">
             <button
               type="button"
-              className="btn-close text-reset"
+              className="btn-close btn-close-white text-reset"
               data-bs-dismiss="offcanvas"
               aria-label="Close"
             ></button>

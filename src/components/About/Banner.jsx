@@ -1,7 +1,7 @@
 import React from "react";
 import slide from "../../assets/slide.png";
-import leftArrow from "../../assets/left-arrow.png";
-import rightArrow from "../../assets/right-arrow.png";
+// import leftArrow from "../../assets/left-arrow.png";
+// import rightArrow from "../../assets/right-arrow.png";
 
 const Banner = () => {
   return (
@@ -49,24 +49,24 @@ const Banner = () => {
       </div>
 
       {/* Custom Previous Button */}
-      <button
+      {/* <button
         className="carousel-control-prev custom-control"
         type="button"
         data-bs-target="#imageCarousel"
         data-bs-slide="prev"
       >
         <img src={leftArrow} alt="Previous" className="arrow-icon" />
-      </button>
+      </button> */}
 
       {/* Custom Next Button */}
-      <button
+      {/* <button
         className="carousel-control-next custom-control"
         type="button"
         data-bs-target="#imageCarousel"
         data-bs-slide="next"
       >
         <img src={rightArrow} alt="Next" className="arrow-icon" />
-      </button>
+      </button> */}
     </div>
   );
 };

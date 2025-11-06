@@ -5,7 +5,7 @@ import insta from '../assets/instagram.png'
 import linkedin from '../assets/linkedin.png'
 import facebook from '../assets/facebook.png'
 import x from '../assets/x.png'
-import logo from "../assets/footer-logo.png"; // your logo path
+import logo from "../assets/logo.png"; // your logo path
 
 const Footer = () => {
     return (

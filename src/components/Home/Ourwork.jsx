@@ -1,5 +1,8 @@
 import React from 'react'
-import accord from '../../assets/accord.png'
+import apartment from '../../assets/FANTACY APARTMENTS.png'
+import houses from '../../assets/INDIVIDUAL HOUSES.png'
+import upar from '../../assets/UPAR HOTELS.png'
+import oyo from '../../assets/OYO.png'
 import client1 from '../../assets/client-logo1.png'
 import client2 from '../../assets/client-logo2.png'
 import client3 from '../../assets/client-logo3.png'
@@ -21,7 +24,7 @@ const Ourwork = () => {
                         <div className="row">
                             <div className="col-md-3 mb-3 works">
                                 <div className="work-box">
-                                    <img src={accord} alt="our-work-image" className="img-fluid" />
+                                    <img src={apartment} alt="our-work-image" className="img-fluid" />
                                     <div className="overlay">
                                         <h4>HOTEL ACCORD</h4>
                                     </div>
@@ -30,7 +33,7 @@ const Ourwork = () => {
 
                             <div className="col-md-3 mb-3 works">
                                 <div className="work-box">
-                                    <img src={accord} alt="our-work-image" className="img-fluid" />
+                                    <img src={houses} alt="our-work-image" className="img-fluid" />
                                     <div className="overlay">
                                         <h4>HOTEL ACCORD</h4>
                                     </div>
@@ -39,7 +42,7 @@ const Ourwork = () => {
 
                             <div className="col-md-3 mb-3 works">
                                 <div className="work-box">
-                                    <img src={accord} alt="our-work-image" className="img-fluid" />
+                                    <img src={upar} alt="our-work-image" className="img-fluid" />
                                     <div className="overlay">
                                         <h4>HOTEL ACCORD</h4>
                                     </div>
@@ -48,7 +51,7 @@ const Ourwork = () => {
 
                             <div className="col-md-3 works">
                                 <div className="work-box">
-                                    <img src={accord} alt="our-work-image" className="img-fluid" />
+                                    <img src={oyo} alt="our-work-image" className="img-fluid" />
                                     <div className="overlay">
                                         <h4>HOTEL ACCORD</h4>
                                     </div>

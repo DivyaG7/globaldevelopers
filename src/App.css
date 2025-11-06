@@ -3,7 +3,7 @@
 }
 
 .custom-navbar {
-  background-color: #fff;
+  background-color: #000;
   padding: 10px 24px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
@@ -12,15 +12,18 @@
 .navbar-nav .nav-link {
   font-weight: 600;
   font-size: 18px;
-  color: #333;
+  color: #fff;
   margin: 0 12px;
   font-family: "Montserrat", sans-serif;
   transition: color 0.15s ease;
 }
 
-.navbar-nav .nav-link:hover,
-.navbar-nav .nav-link.active {
+.navbar-nav .nav-link:hover{
   color: #b40000;
+}
+
+.navbar-nav .nav-link.active {
+  color: #b40000 !important;
 }
 
 /* customer care (desktop) */
@@ -39,31 +42,32 @@
 .divider {
   width: 1px;
   height: 40px;
-  background-color: #e0e0e0;
+  background-color: #ffff;
   margin: 0 12px;
 }
 
 .customer-care-text {
-  line-height: 1.1;
+  line-height: 1.5;
 }
 
 .customer-care-text span {
   color: #b40000;
   font-weight: 600;
   display: block;
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .customer-care-text p {
   margin: 0;
   font-weight: 700;
-  color: #111;
-  font-size: 14px;
+  color: #fff;
+  font-size: 16px;
 }
 
 .navbar .navbar-toggler {
   border: none !important;
 }
+
 
 /* mobile offcanvas customer care spacing */
 .mobile-customer-care .divider {
@@ -72,15 +76,23 @@
 }
 
 /* offcanvas link styles */
+.offcanvas{
+  background: #000 !important;
+}
 .offcanvas-body .nav-link {
   padding: 10px 0;
   font-weight: 600;
 }
 
 /* ensure toggler icon displays properly */
-.navbar-light .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280,0,0,0.7%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+.navbar .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.6); /* white border (optional) */
 }
+
+.navbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
 
 
 /* Homepage style */
@@ -186,7 +198,7 @@
 }
 
 .home-about .arrow {
-  /* margin-left: -10px; */
+  margin-left: -10px;
   width: 60px;
 }
 
