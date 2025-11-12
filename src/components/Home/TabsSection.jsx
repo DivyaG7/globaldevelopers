@@ -5,6 +5,7 @@ import consultancy from '../../assets/consultancy.png'
 import associates from '../../assets/associates.png'
 import developers from '../../assets/developers.png'
 import estates from '../../assets/estates.png'
+import { Link } from "react-router-dom";
 
 const TabsSection = () => {
   return (
@@ -81,9 +82,11 @@ const TabsSection = () => {
                 alt="sanitary work"
                 className="img-fluid"
               />
-              {/* <button className="read-more-btn mt-3">
-                Read More <span>&#8599;</span>
-              </button> */}
+              <Link to='/consultancy' className="link">
+                <button className="read-more-btn mt-3">
+                  Read More <span>&#8599;</span>
+                </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -104,9 +107,11 @@ const TabsSection = () => {
                 alt="project"
                 className="img-fluid"
               />
-              {/* <button className="read-more-btn mt-3">
-                Read More <span>&#8599;</span>
-              </button> */}
+              <Link to='/estate' className="link">
+                <button className="read-more-btn mt-3">
+                  Read More <span>&#8599;</span>
+                </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -127,9 +132,9 @@ const TabsSection = () => {
                 alt="developers"
                 className="img-fluid"
               />
-              {/* <button className="read-more-btn mt-3">
+              <button className="read-more-btn mt-3">
                 Read More <span>&#8599;</span>
-              </button> */}
+              </button>
             </div>
           </div>
         </div>
@@ -151,9 +156,9 @@ const TabsSection = () => {
                 alt="developers"
                 className="img-fluid"
               />
-              {/* <button className="read-more-btn mt-3">
+              <button className="read-more-btn mt-3">
                 Read More <span>&#8599;</span>
-              </button> */}
+              </button>
             </div>
           </div>
         </div>
