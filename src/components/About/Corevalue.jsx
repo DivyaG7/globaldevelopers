@@ -1,17 +1,24 @@
 import React from 'react'
+import useScrollAnimation from '../Home/useScrollAnimation';
 
 const Corevalue = () => {
+    const refleft = useScrollAnimation("fade-left", 800);
+    const ref1 = useScrollAnimation("fade-up", 800);
+    const ref2 = useScrollAnimation("fade-down", 800);
+    const ref3 = useScrollAnimation("fade-up", 800);
+    const ref4 = useScrollAnimation("fade-down", 800);
+    const ref5 = useScrollAnimation("fade-up", 800);
     return (
         <>
             <section className='corevalue p-5'>
-                <div className='p-3'>
+                <div className='p-3' ref={refleft}>
                     <h2 className='fw-bold'>OUR CORE VALUES</h2>
                     <p>Our people and our actions are driven by one overarching purpose: Building a better future, together. As
                         builders,we aren’t just creating new structures - we’re building people, communities and legacies.</p>
                 </div>
 
                 <div className="d-flex flex-wrap justify-content-center gap-5 mt-2">
-                    <div className="">
+                    <div ref={ref1}>
                         <div className="core-box">
                             <p className='fw-bold'>INTEGRITY</p>
                             <div class="overlay">
@@ -20,7 +27,7 @@ const Corevalue = () => {
                         </div>
                     </div>
 
-                    <div className="">
+                    <div ref={ref2}>
                         <div className="core-box">
                             <p className='fw-bold'>QUALITY</p>
                             <div class="overlay">
@@ -29,7 +36,7 @@ const Corevalue = () => {
                         </div>
                     </div>
 
-                    <div className="">
+                    <div ref={ref3}>
                         <div className="core-box">
                             <p className='fw-bold'>SAFETY</p>
                             <div class="overlay">
@@ -38,7 +45,7 @@ const Corevalue = () => {
                         </div>
                     </div>
 
-                    <div className="">
+                    <div ref={ref4}>
                         <div className="core-box">
                             <p className='fw-bold'>INNOVATION</p>
                             <div class="overlay">
@@ -47,7 +54,7 @@ const Corevalue = () => {
                         </div>
                     </div>
 
-                    <div className="">
+                    <div ref={ref5}>
                         <div className="core-box">
                             <p className='fw-bold'>TEAMWORK</p>
                             <div class="overlay">

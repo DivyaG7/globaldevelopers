@@ -45,11 +45,13 @@ const Navbar = () => {
 
         {/* Desktop Right Side */}
         <div className="customer-care d-none d-lg-flex align-items-center">
-          <img src={whatsappIcon} alt="WhatsApp" className="whatsapp-icon" />
+          <a href="https://wa.me/988886755" target="_blank" rel="noreferrer">
+            <img src={whatsappIcon} alt="WhatsApp" className="whatsapp-icon" />
+          </a>
           <div className="divider"></div>
           <div className="customer-care-text">
             <span>Dial Customer Care</span>
-            <p>1800-5722-789</p>
+            <p><a href="tel:988886755">+91 988886755</a></p>
           </div>
         </div>
 

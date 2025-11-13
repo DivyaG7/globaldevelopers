@@ -3,6 +3,7 @@ import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import slide from "../assets/contact-banner.png";
+import useScrollAnimation from "../components/Home/useScrollAnimation";
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -43,6 +44,16 @@ const Contact = () => {
         }
     };
 
+    const refup = useScrollAnimation("fade-up", 800);
+    const refup1 = useScrollAnimation("fade-up", 800);
+    const refup2 = useScrollAnimation("fade-up", 800);
+    const refup3 = useScrollAnimation("fade-up", 800);
+    const refup4 = useScrollAnimation("fade-up", 800);
+    const ref1 = useScrollAnimation("fade-right", 800);
+    const ref2 = useScrollAnimation("fade-right", 800);
+    const ref3 = useScrollAnimation("fade-right", 800);
+    const ref4 = useScrollAnimation("fade-right", 800);
+
     return (
         <>
             <div
@@ -53,7 +64,7 @@ const Contact = () => {
             >
                 {/* Carousel Indicators */}
                 <div className="carousel-indicators">
-                    <button
+                    {/* <button
                         type="button"
                         data-bs-target="#imageCarousel"
                         data-bs-slide-to="0"
@@ -72,7 +83,7 @@ const Contact = () => {
                         data-bs-target="#imageCarousel"
                         data-bs-slide-to="2"
                         aria-label="Slide 3"
-                    ></button>
+                    ></button> */}
                 </div>
 
                 {/* Carousel Slides */}
@@ -111,7 +122,7 @@ const Contact = () => {
             <section className="contact container py-5">
                 <div className="row">
                     {/* Left Side - Form */}
-                    <div className="col-md-7">
+                    <div className="col-md-7" ref={refup}>
                         <h2 className="fw-bold mb-3">Contact Us</h2>
                         <p className="mb-4 text-muted">
                             We are deeply committed to delivering unparalleled service and unwavering
@@ -120,25 +131,25 @@ const Contact = () => {
 
                         <form onSubmit={handleSubmit}>
                             <div className="row">
-                                <div className="col-md-6 mb-3">
+                                <div className="col-md-6 mb-3" ref={refup1}>
                                     <label className="form-label">First Name<span className="text-danger">*</span></label>
                                     <input type="text" name="firstName" value={formData.firstName}
                                         onChange={handleChange} className="form-control shadow" placeholder="First Name" required />
                                 </div>
-                                <div className="col-md-6 mb-3">
+                                <div className="col-md-6 mb-3" ref={refup2}>
                                     <label className="form-label">Last Name<span className="text-danger">*</span></label>
                                     <input type="text" name="lastName" value={formData.lastName}
                                         onChange={handleChange} className="form-control shadow" placeholder="Last Name" required />
                                 </div>
                             </div>
 
-                            <div className="mb-3">
+                            <div className="mb-3" ref={refup3}>
                                 <label className="form-label">Email<span className="text-danger">*</span></label>
                                 <input type="email" name="email" value={formData.email}
                                     onChange={handleChange} className="form-control shadow" placeholder="Email" required />
                             </div>
 
-                            <div className="mb-4">
+                            <div className="mb-4" ref={refup4}>
                                 <label className="form-label">Description<span className="text-danger">*</span></label>
                                 <textarea name="message" rows="4" value={formData.message}
                                     onChange={handleChange} className="form-control shadow" placeholder="Description" required />
@@ -152,7 +163,7 @@ const Contact = () => {
 
                     {/* Right Side - Info Boxes */}
                     <div className="col-md-5 mt-5 mt-md-0 icon">
-                        <div className="d-flex align-items-center gap-4 p-3 mb-4 rounded">
+                        <div className="d-flex align-items-center gap-4 p-3 mb-4 rounded" ref={ref1}>
                             <div>
                                 <i className="bi bi-geo-alt"></i>
                             </div>
@@ -165,33 +176,33 @@ const Contact = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="d-flex align-items-center gap-4 p-3 mb-4 rounded">
+                        <div className="d-flex align-items-center gap-4 p-3 mb-4 rounded" ref={ref2}>
                             <div>
                                 <i className="bi bi-telephone"></i>
                             </div>
                             <div>
                                 <h6> Contact</h6>
-                                <p className="mb-0 small">044 - 2372 4755 , +91 94446 14755</p>
+                                <p className="mb-0 small">+91 988886755</p>
                             </div>
                         </div>
-                        <div className="d-flex align-items-center gap-4 p-3 mb-4 rounded">
+                        <div className="d-flex align-items-center gap-4 p-3 mb-4 rounded" ref={ref3}>
                             <div>
                                 <i className="bi bi-envelope"></i>
                             </div>
                             <div>
                                 <h6> Email</h6>
-                                <p className="mb-0 small">globaldevelopers.com</p>
+                                <p className="mb-0 small">globalsanitary@gmail.com</p>
                             </div>
                         </div>
-                        <div className="d-flex align-items-center gap-4 p-3 rounded">
+                        <div className="d-flex align-items-center gap-4 p-3 rounded" ref={ref4}>
                             <div>
                                 <i className="bi bi-clock"></i>
                             </div>
                             <div>
                                 <h6> Working Hours</h6>
                                 <p className="mb-0 small">
-                                    Mon To Sat - 10 am To 7 pm<br />
-                                    Sunday - 11 am To 5 pm
+                                    Mon To Sat - 10 am To 6 pm<br />
+                                    Sunday - Closed
                                 </p>
                             </div>
                         </div>

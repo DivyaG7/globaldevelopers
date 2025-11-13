@@ -1,16 +1,19 @@
 import React from 'react'
 import arrow from '../../assets/cross-arrow.png'
 import homeabout from '../../assets/home-about.png'
+import useScrollAnimation from './useScrollAnimation';
 
 const Homeabout = () => {
+    const ref = useScrollAnimation("fade-right", 800);
+    const refleft = useScrollAnimation("fade-left", 800);
     return (
         <>
             <section className='home-about p-5'>
                 <div className="row">
-                    <div className="col-md-6 d-flex justify-content-center align-items-center mb-2">
+                    <div className="col-md-6 d-flex justify-content-center align-items-center mb-2" ref={refleft}>
                         <img src={homeabout} alt='home-about-image' className='img-fluid w-75' />
                     </div>
-                    <div className="col-md-6 mb-2">
+                    <div className="col-md-6 mb-2" ref={ref}>
                         <h2 className='fw-bold'>About us</h2>
                         <h6>THE GLOBAL CONSULTANCY PROVIDING SMART WORKS</h6>
                         <p>Global Sanitary Consultancy was established on January 14, 2010, initially focusing on small-scale contracts such as housekeeping, house cleaning, sewage management, and septic tank clearance.</p>

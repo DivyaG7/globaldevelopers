@@ -6,10 +6,13 @@ import associates from '../../assets/associates.png'
 import developers from '../../assets/developers.png'
 import estates from '../../assets/estates.png'
 import { Link } from "react-router-dom";
+import useScrollAnimation from "./useScrollAnimation";
+
 
 const TabsSection = () => {
+  const ref = useScrollAnimation("fade-up", 800);
   return (
-    <div className="container text-center my-5">
+    <div className="container text-center my-5" ref={ref}>
       <ul className="nav tab-buttons" id="myTab" role="tablist">
         <li className="nav-item" role="presentation">
           <button

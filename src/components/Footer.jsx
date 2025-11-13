@@ -67,11 +67,11 @@ const Footer = () => {
                             </li>
                             <li className="mt-3">
                                 <FaPhone className="me-2" />
-                                044 - 2372 4755 , +91 94446 14755
+                                 +91 988886755
                             </li>
                             <li className="mt-3">
                                 <FaEnvelope className="me-2" />
-                                globaldevelopers.com
+                                globalsanitary@gmail.com
                             </li>
                         </ul>
                     </div>
