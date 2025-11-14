@@ -3,44 +3,102 @@
 }
 
 /* Fade directions */
-.fade-up.aos-animate    { animation: fade-up 0.8s ease forwards; }
-.fade-down.aos-animate  { animation: fade-down 0.8s ease forwards; }
-.fade-left.aos-animate  { animation: fade-left 0.8s ease forwards; }
-.fade-right.aos-animate { animation: fade-right 0.8s ease forwards; }
+.fade-up.aos-animate {
+  animation: fade-up 0.8s ease forwards;
+}
+
+.fade-down.aos-animate {
+  animation: fade-down 0.8s ease forwards;
+}
+
+.fade-left.aos-animate {
+  animation: fade-left 0.8s ease forwards;
+}
+
+.fade-right.aos-animate {
+  animation: fade-right 0.8s ease forwards;
+}
 
 /* Zoom effects */
-.zoom-in.aos-animate  { animation: zoom-in 0.8s ease forwards; }
-.zoom-out.aos-animate { animation: zoom-out 0.8s ease forwards; }
+.zoom-in.aos-animate {
+  animation: zoom-in 0.8s ease forwards;
+}
+
+.zoom-out.aos-animate {
+  animation: zoom-out 0.8s ease forwards;
+}
 
 /* Keyframes */
 @keyframes fade-up {
-  from { transform: translateY(40px); opacity: 0; }
-  to   { transform: translateY(0); opacity: 1; }
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 @keyframes fade-down {
-  from { transform: translateY(-40px); opacity: 0; }
-  to   { transform: translateY(0); opacity: 1; }
+  from {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 @keyframes fade-left {
-  from { transform: translateX(-40px); opacity: 0; }
-  to   { transform: translateX(0); opacity: 1; }
+  from {
+    transform: translateX(-40px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 @keyframes fade-right {
-  from { transform: translateX(40px); opacity: 0; }
-  to   { transform: translateX(0); opacity: 1; }
+  from {
+    transform: translateX(40px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 @keyframes zoom-in {
-  from { transform: scale(0.8); opacity: 0; }
-  to   { transform: scale(1); opacity: 1; }
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 @keyframes zoom-out {
-  from { transform: scale(1.2); opacity: 0; }
-  to   { transform: scale(1); opacity: 1; }
+  from {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 
@@ -61,7 +119,7 @@
   transition: color 0.15s ease;
 }
 
-.navbar-nav .nav-link:hover{
+.navbar-nav .nav-link:hover {
   color: #b40000;
 }
 
@@ -107,7 +165,7 @@
   font-size: 16px;
 }
 
-.customer-care-text a{
+.customer-care-text a {
   text-decoration: none;
   color: #fff;
 }
@@ -124,9 +182,10 @@
 }
 
 /* offcanvas link styles */
-.offcanvas{
+.offcanvas {
   background: #000 !important;
 }
+
 .offcanvas-body .nav-link {
   padding: 10px 0;
   font-weight: 600;
@@ -134,7 +193,8 @@
 
 /* ensure toggler icon displays properly */
 .navbar .navbar-toggler {
-  border-color: rgba(255, 255, 255, 0.6); /* white border (optional) */
+  border-color: rgba(255, 255, 255, 0.6);
+  /* white border (optional) */
 }
 
 .navbar .navbar-toggler-icon {
@@ -167,7 +227,7 @@
 }
 
 .tab-buttons .nav-link.active {
-  background-color: #d91919;
+  background-color: #BC0E0E;
   color: #fff;
   border: none;
 }
@@ -224,11 +284,11 @@
   border-radius: 20px;
 }
 
-.content-wrapper .link{
+.content-wrapper .link {
   text-decoration: none;
 }
 
-.consaltancy-img img{
+.consaltancy-img img {
   height: 600px;
 }
 
@@ -392,6 +452,138 @@
   border-radius: 8px;
 }
 
+/* Ensure slick list/track don't collapse on small screens */
+.client-carousel-wrapper {
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin: 0 auto;
+}
+
+/* Make slide containers flexible and centered */
+.clients .slick-list {
+  overflow: visible !important;
+  /* allow visible shadows/overflow if needed */
+}
+
+.clients .slick-track {
+  display: flex !important;
+  align-items: center;
+}
+
+.clients .slick-slide {
+  display: flex !important;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0 8px;
+  /* small gap between slides */
+}
+
+/* Slide content should take full width of the slide */
+/* .client-slide > .client-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* Image sizing */
+.client-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+/* small tweak for mobile touch */
+@media (max-width: 576px) {
+  .clients .slick-slide {
+    padding: 0 8px;
+  }
+}
+
+
+.announce-wrapper {
+  width: 100%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 0;
+  overflow: hidden;
+}
+
+/* LEFT BLUE BOX */
+.announce-title {
+  background: #BC0E0E;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.announce-title .icon {
+  font-size: 18px;
+}
+
+/* Ticker Container */
+.ticker-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+}
+
+/* Infinite scroll animation */
+.ticker {
+  display: inline-flex;
+  gap: 40px;
+  animation: tickerMove 15s linear infinite;
+}
+
+@keyframes tickerMove {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Each Item */
+.ticker-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+  font-size: 17px;
+  color: #2d2d2d;
+}
+
+/* Number */
+.number {
+  background: #ffca28;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+/* NEW badge */
+.new-badge {
+  background: #BC0E0E;
+  padding: 3px 8px;
+  font-size: 12px;
+  border-radius: 4px;
+  font-weight: 700;
+  color: #fff;
+}
+
 
 
 /* Carousel style */
@@ -456,18 +648,18 @@
 
 
 .meet button {
-    border-radius: 25px;
-    border: 1px solid #fff;
-    background: transparent;
-    color: #fff;
-    padding: 10px 20px;
-    font-weight: 700;
-  }
+  border-radius: 25px;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  padding: 10px 20px;
+  font-weight: 700;
+}
 
 .meet button:hover {
-    background: #E31808;
-    border: none;
-  }
+  background: #E31808;
+  border: none;
+}
 
 .applynow button {
   border-radius: 25px;
@@ -648,6 +840,35 @@
 }
 
 @media screen and (max-width: 767px) {
+
+  .announce-title {
+    padding: 3px 13px;
+    font-size: 13px;
+    gap: 4px;
+  }
+
+  .announce-title .icon {
+    font-size: 13px;
+  }
+
+  .ticker-item {
+    gap: 3px;
+    font-size: 13px;
+  }
+
+  /* Number */
+  .number {
+    padding: 3px 6px;
+    border-radius: 5px;
+    font-weight: 700;
+  }
+
+  /* NEW badge */
+  .new-badge {
+    padding: 1px 4px;
+    font-size: 8px;
+  }
+
   .arrow-icon {
     width: 25px;
     height: 25px;
