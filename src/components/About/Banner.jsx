@@ -13,7 +13,7 @@ const Banner = () => {
     >
       {/* Carousel Indicators */}
       <div className="carousel-indicators">
-        <button
+        {/* <button
           type="button"
           data-bs-target="#imageCarousel"
           data-bs-slide-to="0"
@@ -32,7 +32,7 @@ const Banner = () => {
           data-bs-target="#imageCarousel"
           data-bs-slide-to="2"
           aria-label="Slide 3"
-        ></button>
+        ></button> */}
       </div>
 
       {/* Carousel Slides */}
