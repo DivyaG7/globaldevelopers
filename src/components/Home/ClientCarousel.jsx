@@ -38,7 +38,7 @@ export default function ClientCarousel() {
   };
 
   return (
-    <div className="client-carousel-wrapper p-3">
+    <div className="client-carousel-wrapper p-2">
       <Slider {...settings} className="clients">
         {clients.map((logo, index) => (
           <div key={index} className="client-slide">

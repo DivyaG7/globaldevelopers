@@ -460,6 +460,12 @@
   margin: 0 auto;
 }
 
+.slick-slide>div {
+  margin: auto;
+  width: 100% !important;
+}
+
+
 /* Make slide containers flexible and centered */
 .clients .slick-list {
   overflow: visible !important;
@@ -822,6 +828,10 @@
 }
 
 @media (max-width: 992px) {
+  .clients .slick-slide {
+    width: 100% !important;
+  }
+
   .content-wrapper {
     flex-direction: column;
     align-items: center;
