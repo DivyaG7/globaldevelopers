@@ -1,13 +1,14 @@
 // AnnouncementsTicker.jsx
 
 import React from "react";
+import newgif from '../../assets/new.gif';
 
 export default function AnnouncementsTicker() {
   const data = [
-    { id: 1, text: "Global Dezire Pallavaram", isNew: true },
-    { id: 2, text: "Global Twins Anakaputhur", isNew: true },
-    { id: 1, text: "Global Dezire Pallavaram", isNew: true },
-    { id: 2, text: "Global Twins Anakaputhur", isNew: true },
+    { id: 1, text: "Global Dezire Pallavaram" },
+    { id: 2, text: "Global Twins Anakaputhur" },
+    { id: 1, text: "Global Dezire Pallavaram" },
+    { id: 2, text: "Global Twins Anakaputhur" },
   ];
 
   // Duplicate list for infinite scroll
@@ -25,10 +26,7 @@ export default function AnnouncementsTicker() {
             <div key={i} className="ticker-item">
               <span className="number">{item.id}.</span>
               <span className="text">{item.text}</span>
-
-              {item.isNew && (
-                <span className="new-badge">NEW</span>
-              )}
+              <img src={newgif} alt="new-image" className="img-fluid me-4" />
             </div>
           ))}
         </div>

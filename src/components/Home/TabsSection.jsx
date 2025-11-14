@@ -110,11 +110,9 @@ const TabsSection = () => {
                 alt="project"
                 className="img-fluid"
               />
-              <Link to='/estate' className="link">
-                <button className="read-more-btn mt-3">
-                  Read More <span>&#8599;</span>
-                </button>
-              </Link>
+              <button className="read-more-btn mt-3">
+                Read More <span>&#8599;</span>
+              </button>
             </div>
           </div>
         </div>
@@ -159,9 +157,11 @@ const TabsSection = () => {
                 alt="developers"
                 className="img-fluid"
               />
-              <button className="read-more-btn mt-3">
-                Read More <span>&#8599;</span>
-              </button>
+              <Link to='/estate' className="link">
+                <button className="read-more-btn mt-3">
+                  Read More <span>&#8599;</span>
+                </button>
+              </Link>
             </div>
           </div>
         </div>

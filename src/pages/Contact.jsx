@@ -25,7 +25,7 @@ const Contact = () => {
 
         try {
             const res = await axios.post(
-                "https://localhost:3000/send-mail",
+                "https://globaldevelopers.onrender.com/send-mail",
                 formData,
                 {
                     headers: { "Content-Type": "application/json" }, // ✅ Important
