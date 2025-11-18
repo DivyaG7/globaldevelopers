@@ -28,7 +28,7 @@ const Contact = () => {
                 "https://globaldevelopers.onrender.com/send-mail",
                 formData,
                 {
-                    headers: { "Content-Type": "application/json" }, // ✅ Important
+                    headers: { "Content-Type": "application/json" }, 
                 }
             );
 
@@ -37,7 +37,7 @@ const Contact = () => {
                 setFormData({ firstName: "", lastName: "", email: "", message: "" });
             }
         } catch (error) {
-            console.error("❌ Email send failed:", error);
+            console.error("Email send failed:", error);
             toast.error("Failed to send message. Try again later.", { position: "top-center" });
         } finally {
             setLoading(false);
