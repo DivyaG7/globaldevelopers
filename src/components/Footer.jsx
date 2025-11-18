@@ -39,6 +39,7 @@ const Footer = () => {
                             <ul className="list-unstyled">
                                 <li className="mt-3"><a href="/">Home</a></li>
                                 <li className="mt-3"><a href="/about">About Us</a></li>
+                                <li className="mt-3"><a href="/ourworkgallery">Our Works</a></li>
                                 <li className="mt-3"><a href="/contact">Contact Us</a></li>
                             </ul>
                         </div>

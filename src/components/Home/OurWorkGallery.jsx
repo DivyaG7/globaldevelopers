@@ -7,6 +7,20 @@ import upar4 from '../../assets/upar/4.png'
 import upar5 from '../../assets/upar/5.png'
 import upar6 from '../../assets/upar/6.png'
 import upar7 from '../../assets/upar/7.png'
+import individual1 from '../../assets/individual/1.png'
+import individual2 from '../../assets/individual/2.png'
+import individual3 from '../../assets/individual/3.png'
+import individual4 from '../../assets/individual/4.png'
+import individual5 from '../../assets/individual/5.png'
+import individual6 from '../../assets/individual/6.png'
+import individual7 from '../../assets/individual/7.png'
+import individual8 from '../../assets/individual/8.png'
+import individual9 from '../../assets/individual/9.png'
+import individual10 from '../../assets/individual/10.png'
+import individual11 from '../../assets/individual/11.png'
+import individual12 from '../../assets/individual/12.png'
+import individual13 from '../../assets/individual/13.png'
+import individual14 from '../../assets/individual/14.png'
 import kolappam1 from '../../assets/kolappakm/1.png'
 import kolappam2 from '../../assets/kolappakm/2.png'
 import kolappam3 from '../../assets/kolappakm/3.png'
@@ -52,7 +66,7 @@ const projects = [
   },
   {
     name: "Global Individual House & Appartments",
-    images: [ upar1, upar2, upar3, upar4, upar5, upar6, upar7],
+    images: [ individual1, individual2, individual3, individual4, individual5, individual6, individual7, individual8, individual9, individual10, individual11, individual12, individual13, individual14],
   },
   {
     name: "Global Venture Kolappakm",
