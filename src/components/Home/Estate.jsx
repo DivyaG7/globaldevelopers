@@ -5,10 +5,11 @@ import estate3 from '../../assets/estate3.jpeg'
 import estate4 from '../../assets/estate4.jpeg'
 import estate5 from '../../assets/estate5.jpeg'
 import estate6 from '../../assets/estate6.jpeg'
+import estate7 from '../../assets/estate7.jpeg'
 
 const Estate = () => {
     const images = [
-        estate1, estate2, estate3, estate4, estate5, estate6
+        estate1, estate2, estate3, estate4, estate5, estate6, estate7,
     ];
 
     return (

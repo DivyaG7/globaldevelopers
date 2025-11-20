@@ -11,6 +11,7 @@ import Footer from "./components/Footer";
 import Consultancy from "./components/Home/Consultancy";
 import Estate from "./components/Home/Estate";
 import OurWorkGallery from "./components/Home/OurWorkGallery";
+import Developers from "./components/Home/Developers";
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/consultancy" element={<Consultancy />} />
         <Route path="/estate" element={<Estate />} />
+        <Route path="/developers" element={<Developers />} />
         <Route path="/ourworkgallery" element={<OurWorkGallery />} />
       </Routes>
       <Footer />

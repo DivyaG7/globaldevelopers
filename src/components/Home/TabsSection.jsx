@@ -133,9 +133,11 @@ const TabsSection = () => {
                 alt="developers"
                 className="img-fluid"
               />
+              <Link to='/developers' className="link">
               <button className="read-more-btn mt-3">
                 Read More <span>&#8599;</span>
               </button>
+              </Link>
             </div>
           </div>
         </div>

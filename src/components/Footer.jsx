@@ -72,7 +72,7 @@ const Footer = () => {
                             </li>
                             <li className="mt-3">
                                 <FaEnvelope className="me-2" />
-                                globalsanitary@gmail.com
+                                connectglobaldevelopers@gmail.com
                             </li>
                         </ul>
                     </div>
