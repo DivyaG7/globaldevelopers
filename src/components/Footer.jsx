@@ -90,7 +90,7 @@ const Footer = () => {
 
       {/* Bottom bar */}
       <div className="footer-bottom text-center py-2">
-        <p className="mb-0">copyright © 2024 by globaldevelopers.com</p>
+        <p className="mb-0">copyright © 2025 by globaldevelopers.org.in</p>
       </div>
     </footer>
   );
