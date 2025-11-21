@@ -8,11 +8,16 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 app.use(
   cors({
-    origin: "https://www.globaldevelopers.org.in/", // Frontend domain
+    origin: [
+      "https://www.globaldevelopers.org.in",
+      "https://globaldevelopers.org.in",
+      "https://globaldevelopers.vercel.app"
+    ],
     methods: ["POST"],
     allowedHeaders: ["Content-Type"],
   })
 );
+
 app.use(bodyParser.json());
 
 // POST route to send email
