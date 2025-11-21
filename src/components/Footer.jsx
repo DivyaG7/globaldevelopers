@@ -81,7 +81,7 @@ const Footer = () => {
               </li>
               <li className="mt-3">
                 <FaEnvelope className="me-2" />
-                connectglobaldevelopers@gmail.com
+                teamsglobaldevelopers@gmail.com
               </li>
             </ul>
           </div>

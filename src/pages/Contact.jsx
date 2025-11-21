@@ -240,7 +240,7 @@ const Contact = () => {
               </div>
               <div>
                 <h6> Email</h6>
-                <p className="mb-0 small">connectglobaldevelopers@gmail.com</p>
+                <p className="mb-0 small">teamsglobaldevelopers@gmail.com</p>
               </div>
             </div>
             <div

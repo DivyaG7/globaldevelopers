@@ -23,7 +23,7 @@ app.post("/send-mail", async (req, res) => {
   try {
     const response = await resend.emails.send({
       from: "Global Developers <onboarding@resend.dev>", // Default verified sender
-      to: "globalsanitary@gmail.com", // Receiving email
+      to: "teamsglobaldevelopers@gmail.com", // Receiving email
       subject: `New Contact Form Submission from ${firstName} ${lastName}`,
       html: `
         <h3>Contact Form Submission</h3>
