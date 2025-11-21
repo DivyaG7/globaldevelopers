@@ -8,7 +8,7 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 app.use(
   cors({
-    origin: "https://globaldevelopers.vercel.app", // Frontend domain
+    origin: "https://www.globaldevelopers.org.in/", // Frontend domain
     methods: ["POST"],
     allowedHeaders: ["Content-Type"],
   })
